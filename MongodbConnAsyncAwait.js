@@ -1,5 +1,5 @@
 const {MongoClient} = require("mongodb")
-const url = 'mongodb://127.0.0.1:27017'
+const url = 'mongodb://127.0.0.1:27017'//localhost is not working
 const database = 'nodejsbasic'
 const client = new MongoClient(url)
 
@@ -11,3 +11,4 @@ async function getData(){
     console.log(response)
 }
 getData()
+
