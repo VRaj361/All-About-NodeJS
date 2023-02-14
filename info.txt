@@ -1,0 +1,6 @@
+middleware use to modify req,res 
+- ex block website in some country, user loged in or not
+
+types->
+
+application, route,error-handling,buildin,thirdparty
