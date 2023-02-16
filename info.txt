@@ -9,3 +9,6 @@ application, route,error-handling,buildin,thirdparty
 
 mongoose is advance think compare to mongodb 
 provide schema, validation, fields,datatype etc..
+
+
+.editor command is use for write code in cmd in node terminal
