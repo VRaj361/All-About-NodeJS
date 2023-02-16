@@ -33,6 +33,7 @@ app.delete("/user/:id",async(req,res)=>{
         // {name:req.body.name},
         {_id:new mongodb.ObjectId(req.params.id)}
     )
+    result["id"]=req.params.id
     res.send(result)
 })
 app.listen(5000)

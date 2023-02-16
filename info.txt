@@ -4,3 +4,8 @@ middleware use to modify req,res
 types->
 
 application, route,error-handling,buildin,thirdparty
+
+
+
+mongoose is advance think compare to mongodb 
+provide schema, validation, fields,datatype etc..
