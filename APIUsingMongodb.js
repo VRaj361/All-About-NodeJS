@@ -36,4 +36,5 @@ app.delete("/user/:id",async(req,res)=>{
     result["id"]=req.params.id
     res.send(result)
 })
+
 app.listen(5000)

@@ -34,6 +34,18 @@ const updateOneRecord = async()=>{
 
 const deleteRecord = async()=>{
     let data  = await User.deleteOne({price:34})
-
 }
-deleteRecord()
+const express = require("express")
+const app = express()
+
+app.get("/user/:name",async(req,res)=>{
+    console.log(req.query.name)
+    let result = await User.find({
+        "$or":[
+            {"name":{$regex:req.params.name}}
+        ]
+    })
+    res.send(result)
+})
+app.listen(5000)
+// deleteRecord()
